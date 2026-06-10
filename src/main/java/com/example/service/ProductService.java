@@ -6,7 +6,9 @@ import org.springframework.stereotype.Service;
 public class ProductService {
 
     public String getProductDetails(Long id) {
+        
         return "Product details for ID: " + id;
+        
     }
 
     public String getProductDetailsByName(String name) {
