@@ -9,6 +9,10 @@ public class ProductService {
         return "Product details for ID: " + id;
     }
 
+    public String getProductDetailsByName(String name) {
+        return "Product details for Name: " + name;
+    }
+
     public String addProduct(String name, Double price) {
         return "Product '" + name + "' added with price: $" + price;
     }
