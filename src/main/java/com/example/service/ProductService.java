@@ -9,6 +9,7 @@ public class ProductService {
         return "Product details for ID: " + id;
     }
 
+    
     public String getProductDetailsByName(String name) {
         return "Product details for Name: " + name;
     }
