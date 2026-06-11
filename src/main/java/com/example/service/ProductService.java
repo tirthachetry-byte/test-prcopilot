@@ -20,4 +20,5 @@ public class ProductService {
     public String listAllProducts() {
         return "Listing all products from inventory";
     }
+    
 }
