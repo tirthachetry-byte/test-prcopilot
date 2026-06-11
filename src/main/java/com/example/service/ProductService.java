@@ -12,7 +12,7 @@ public class ProductService {
     public String getProductDetailsByName(String name) {
         return "Product details for name: " + name;
     }
-
+    
     public String addProduct(String name, Double price) {
         return "Product '" + name + "' added with price: $" + price;
     }
@@ -20,4 +20,5 @@ public class ProductService {
     public String listAllProducts() {
         return "Listing all products from inventory";
     }
+    
 }
