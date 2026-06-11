@@ -16,6 +16,7 @@ public class ProductService {
     public String addProduct(String name, Double price) {
         return "Product '" + name + "' added with price: $" + price;
     }
+    
 
     public String listAllProducts() {
         return "Listing all products from inventory";
