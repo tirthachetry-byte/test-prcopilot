@@ -10,7 +10,7 @@ public class ProductService {
     }
 
     public String getProductDetailsByNameAndPhone(String name) {
-        return "Product details for name: " + name;
+        return "Product details for  name: " + name;
     }
 
     public String addProduct(String name, Double price) {
