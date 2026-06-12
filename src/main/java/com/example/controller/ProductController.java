@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/products")
 public class ProductController {
 
+    // TRAP 1: Field injection (Violates Company Guideline #2: Dependency Injection)
     @Autowired
     private ProductService productService;
 
@@ -22,8 +23,9 @@ public class ProductController {
         return ResponseEntity.ok(productService.addProduct(name, price));
     }
 
-    @GetMapping
-    public ResponseEntity<String> listProducts() {
-        return ResponseEntity.ok(productService.listAllProducts());
+    // TRAP 2: Using GET for a destructive action (Violates Company Guideline #3: REST APIs)
+    @GetMapping("/delete/{id}")
+    public ResponseEntity<String> deleteProduct(@PathVariable Long id) {
+        return ResponseEntity.ok("Product deleted successfully");
     }
 }
